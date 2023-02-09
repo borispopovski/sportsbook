@@ -3,9 +3,9 @@
 Spotrsbook API is java service as a Sping boot app which takes JSON string message with objects.
 
 There are 3 endpoints (GET, POST, PUT):
-/sports/get/{id} (get sports book)
-/sports/create	 (create sportsbook)
-/sports/modify   (update sportsbook)
+* /sports/get/{id} (get sports book)
+* /sports/create	 (create sportsbook)
+* /sports/modify   (update sportsbook)
 
 It creates Dtos classes for receiving json message and easier implementation.
 Objects fill directly when it will receive json message.
