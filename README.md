@@ -20,5 +20,5 @@ I use Helper class for converting objects.
 
 Access to API through a Swagger or Postman collection
 
-* Swagger url: http://localhost:8080/swagger-ui/index.html/
+* Swagger url: http://localhost:8080/swagger-ui/index.html
 * There is a postman collection in the project. It should import in a Postman.
