@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "c35fc46d-7d78-4e3b-8562-e085f0a3e5e1",
+		"name": "Sportsbook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2088299"
+	},
+	"item": [
+		{
+			"name": "/sports/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 6180845,\r\n  \"action\": \"CREATE\",\r\n  \"markets\": [\r\n    {\r\n      \"id\": 171697816,\r\n      \"action\": \"CREATE\",\r\n      \"typeId\": 133,\r\n      \"selections\": [\r\n        {\r\n          \"id\": 829002282,\r\n          \"action\": \"CREATE\",\r\n          \"name\": \"|Everton|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 24,\r\n          \"priceDenominator\": 10,\r\n          \"characteristic\": \"HOME\"\r\n        },\r\n        {\r\n          \"id\": 829002283,\r\n          \"action\": \"CREATE\",\r\n          \"name\": \"|Draw|\",\r\n          \"displayOrder\": 20,\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 26,\r\n          \"priceDenominator\": 10,\r\n          \"characteristic\": \"DRAW\"\r\n        },\r\n        {\r\n          \"id\": 829002284,\r\n          \"action\": \"CREATE\",\r\n          \"name\": \"|Arsenal|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 105,\r\n          \"priceDenominator\": 100,\r\n          \"characteristic\": \"AWAY\"\r\n        }\r\n      ],\r\n      \"resulted\": false,\r\n      \"name\": \"|Win-Draw-Win|\",\r\n      \"bettingStatus\": \"ACTIVE\"\r\n    },\r\n    {\r\n      \"id\": 171697817,\r\n      \"action\": \"CREATE\",\r\n      \"typeId\": 139,\r\n      \"selections\": [\r\n        {\r\n          \"id\": 829002292,\r\n          \"action\": \"CREATE\",\r\n          \"name\": \"|Everton|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 54,\r\n          \"priceDenominator\": 14,\r\n          \"characteristic\": \"HOME\"\r\n        },\r\n        {\r\n          \"id\": 829002293,\r\n          \"action\": \"CREATE\",\r\n          \"name\": \"|Draw|\",\r\n          \"displayOrder\": 20,\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 36,\r\n          \"priceDenominator\": 10,\r\n          \"characteristic\": \"DRAW\"\r\n        },\r\n        {\r\n          \"id\": 829002294,\r\n          \"action\": \"CREATE\",\r\n          \"name\": \"|Arsenal|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 98,\r\n          \"priceDenominator\": 80,\r\n          \"characteristic\": \"AWAY\"\r\n        }\r\n      ],\r\n      \"resulted\": false,\r\n      \"name\": \"|Win-Draw-Win First Half|\",\r\n      \"bettingStatus\": \"ACTIVE\"\r\n    }\r\n\r\n  ],\r\n  \"name\": \"|Everton| |v| |Arsenal|\",\r\n  \"eventDescriptor\": {\r\n    \"leagueId\": 289,\r\n    \"leagueName\": \"|English Premier League|\",\r\n    \"sportId\": 49,\r\n    \"sportName\": \"|Football Matches|\"\r\n  },\r\n  \"scheduling\": {\r\n    \"scheduledStartTime\": 1554642300000\r\n  },\r\n  \"bettingStatus\": \"ACTIVE\",\r\n  \"participants\": [\r\n    {\r\n      \"id\": 8,\r\n      \"name\": \"Everton\",\r\n      \"label\": \"A\"\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"name\": \"Arsenal\",\r\n      \"label\": \"B\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sports/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sports",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/sports/get/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sports/get/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sports",
+						"get",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/sports/modify",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 6180845,\r\n  \"action\": \"UPDATE\",\r\n  \"markets\": [\r\n    {\r\n      \"id\": 171697816,\r\n      \"action\": \"UPDATE\",\r\n      \"typeId\": 133,\r\n      \"selections\": [\r\n        {\r\n          \"id\": 829002282,\r\n          \"action\": \"UPDATE\",\r\n          \"name\": \"|Everton|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 24,\r\n          \"priceDenominator\": 10,\r\n          \"characteristic\": \"HOME\"\r\n        },\r\n        {\r\n          \"id\": 829002283,\r\n          \"action\": \"UPDATE\",\r\n          \"name\": \"|Draw|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 26,\r\n          \"priceDenominator\": 10,\r\n          \"characteristic\": \"DRAW\"\r\n        },\r\n        {\r\n          \"id\": 829002284,\r\n          \"action\": \"UPDATE\",\r\n          \"name\": \"|Arsenal|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 105,\r\n          \"priceDenominator\": 100,\r\n          \"characteristic\": \"AWAY\"\r\n        }\r\n      ],\r\n      \"resulted\": false,\r\n      \"name\": \"|Win-Draw-Win|\",\r\n      \"bettingStatus\": \"ACTIVE\"\r\n    },\r\n    {\r\n      \"id\": 171697817,\r\n      \"action\": \"UPDATE\",\r\n      \"typeId\": 139,\r\n      \"selections\": [\r\n        {\r\n          \"id\": 829002292,\r\n          \"action\": \"UPDATE\",\r\n          \"name\": \"|Everton|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 26,\r\n          \"priceDenominator\": 10,\r\n          \"characteristic\": \"HOME\"\r\n        },\r\n        {\r\n          \"id\": 829002293,\r\n          \"action\": \"UPDATE\",\r\n          \"name\": \"|Draw|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 26,\r\n          \"priceDenominator\": 10,\r\n          \"characteristic\": \"DRAW\"\r\n        },\r\n        {\r\n          \"id\": 829002294,\r\n          \"action\": \"UPDATE\",\r\n          \"name\": \"|Arsenal|\",\r\n          \"bettingStatus\": \"ACTIVE\",\r\n          \"priceNumerator\": 105,\r\n          \"priceDenominator\": 100,\r\n          \"characteristic\": \"AWAY\"\r\n        }\r\n      ],\r\n      \"resulted\": false,\r\n      \"name\": \"|Win-Draw-Win First Half|\",\r\n      \"bettingStatus\": \"ACTIVE\"\r\n    }\r\n\r\n  ],\r\n  \"name\": \"|Everton| |v| |Arsenal|\",\r\n  \"bettingStatus\": \"ACTIVE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sports/modify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sports",
+						"modify"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
