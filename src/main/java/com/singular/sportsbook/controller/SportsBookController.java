@@ -40,7 +40,7 @@ public class SportsBookController {
     return new ResponseEntity<>(iSportsBookService.getSportsBook(id), HttpStatus.OK);
   }
   
-  @PutMapping("/update")
+  @PutMapping("/modify")
   public ResponseEntity<String> modigySportsBook(@RequestBody SportsBookDto sportsBookDto) {
     log.info("Recieved sports_book {}", sportsBookDto);
     iSportsBookService.modifySportsBook(sportsBookDto);
